@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useMemo, useState } from "react"
+import { useMemo, useState } from "react"
 import ImmersiveSTEMBackground from "@/components/ImmersiveSTEMBackground"
 import NeuralNetworkBackground from "@/components/NeuralNetworkBackground"
 import CyberSecurityBackground from "@/components/CyberSecurityBackground"
@@ -12,11 +12,11 @@ const subjects = {
   AI: {
     label: "AI",
     eyebrow: "Artificial Intelligence",
-    title: "Building practical machine learning systems that run under real constraints",
+    title: "Building on-device lip-reading systems, applied ML models, and future quantum AI research",
     description:
-      "My AI work is centered on models that have to perform in the real world, especially on-device inference, silent-speech lip reading, reinforcement learning, and efficient deployment.",
+      "My strongest current work in AI is centered on building real models that run under practical constraints, especially my silent-speech lip-reading work, reinforcement learning projects, and hardware-aware mobile inference.",
     long:
-      "A lot of my AI work is focused on deployment, latency, and making models useful outside of notebooks. I have worked on silent-speech lip-reading systems, offline mobile inference with Core ML and the Apple Neural Engine, and reinforcement learning models where architecture choices and efficiency matter. What makes this work meaningful to me is that it combines theory with system design: the model has to be accurate, but it also has to fit hardware limits, inference speed requirements, and real usage conditions.",
+      "My AI work is focused on building systems that actually function under real constraints rather than staying purely theoretical. I collaborated with a University of Virginia professor, Eric Martin, on a silent-speech lip-reading application, using noise injection for accuracy and Apple’s Neural Engine for offline inference. I also developed an iPhone app for offline lip-reading using Core ML and the Apple Neural Engine, trained and optimized reinforcement learning models including Deep Q-Networks with PyTorch and TensorFlow, and worked on real-time inference problems where latency, model efficiency, and deployment matter. Going forward, I want to push further into quantum AI, especially hybrid quantum-classical learning systems, quantum reinforcement learning for control and optimization, and quantum representations for physically meaningful learning problems connected to computation, physics, and complex systems.",
     chips: [
       "Lip Reading",
       "On-Device AI",
@@ -27,31 +27,30 @@ const subjects = {
       "Reinforcement Learning",
       "Quantum AI",
     ],
+    cardTone: "from-cyan-300/18 via-sky-300/10 to-transparent",
     pillTone: "border-cyan-300/25 bg-cyan-300/10 text-cyan-100",
     activeTone:
       "border-cyan-300/30 bg-cyan-300/12 text-white shadow-[0_0_30px_rgba(103,232,249,0.12)]",
     dot: "bg-cyan-300",
     stats: [
-      { label: "Main Focus", value: "Applied ML Systems" },
+      { label: "Main Project", value: "Lip-Reading AI" },
       { label: "Deployment", value: "Offline + On-Device" },
-      { label: "Next Step", value: "Quantum AI" },
+      { label: "Future Direction", value: "Quantum AI" },
     ],
     points: [
-      "Built silent-speech lip-reading systems for real-time offline use",
-      "Worked on deployment-aware AI where latency, hardware, and accuracy all matter",
-      "Interested in pushing toward hybrid quantum-classical learning and deeper model research",
+      "Built and optimized silent-speech lip-reading systems for real-time offline inference",
+      "Trained reinforcement learning models and deployed hardware-aware AI under practical constraints",
+      "Planning future work in hybrid quantum-classical ML, quantum RL, and quantum learning for physical systems",
     ],
-    animationBlurb:
-      "The background models a live neural network whose nodes and edges shift with your cursor to reflect adaptive learning structure.",
   },
   Cybersecurity: {
     label: "Cybersecurity",
     eyebrow: "Cybersecurity",
-    title: "Combining competition, network analysis, and practical defense thinking",
+    title: "Competitive security work across CTFs, network analysis, incident response, and practical defense tooling",
     description:
-      "My cybersecurity experience comes from both high-level competition and hands-on technical work in networking, incident response, and adversarial problem solving.",
+      "My cybersecurity background combines national competition experience, technical workshops, networking knowledge, and hands-on exposure to tools used in realistic security settings.",
     long:
-      "I have developed cybersecurity experience through national recognition, competitive challenges, and technical workshops that pushed me into real tools and real debugging. That includes work with packet analysis, network reasoning, vulnerability-oriented thinking, and practical security tools such as Wireshark, Nmap, and Metasploit. What I like most about cybersecurity is that it rewards precision: you need to reason about systems carefully, think adversarially, and understand how small technical details create large security consequences.",
+      "My work in cybersecurity has been shaped by both competition and applied technical training. I was named a CyberStart America National Cyber Scholar and was recognized on stage at George Mason University as a CyberStart America winner in front of schools across Virginia. I earned the Certiport Networking Certification and competed in the Radford Capture the Flag Challenge for two consecutive years, placing in the top 10 while competing against high schools and colleges across the country. I also participated in Virginia CyberSlam at George Mason University, where I completed hands-on workshops in Wireshark, incident response, and deepfake detection tools. Beyond events, I have worked through advanced CTF-style problems involving vulnerability discovery, exploit logic, systematic debugging, and practical tools such as Wireshark, Nmap, and Metasploit. What interests me most is the blend of adversarial thinking, system-level reasoning, and technical precision required to secure real infrastructure.",
     chips: [
       "CyberStart America",
       "National Cyber Scholar",
@@ -62,31 +61,30 @@ const subjects = {
       "Metasploit",
       "Networking",
     ],
+    cardTone: "from-violet-300/18 via-indigo-300/10 to-transparent",
     pillTone: "border-violet-300/25 bg-violet-300/10 text-violet-100",
     activeTone:
       "border-violet-300/30 bg-violet-300/12 text-white shadow-[0_0_30px_rgba(196,181,253,0.12)]",
     dot: "bg-violet-300",
     stats: [
       { label: "Recognition", value: "National Cyber Scholar" },
-      { label: "Competition", value: "Top-10 CTF Work" },
-      { label: "Focus", value: "Networks + Defense" },
+      { label: "Competition", value: "Top-10 Radford CTF" },
+      { label: "Focus", value: "Networks + Security" },
     ],
     points: [
-      "Built practical experience through CTFs, packet analysis, and incident response exercises",
-      "Learned to reason adversarially about systems, vulnerabilities, and infrastructure",
-      "Most interested in secure systems, cyber operations, and technical defense at scale",
+      "Earned national recognition through CyberStart America and competitive cybersecurity events",
+      "Built practical experience through CTFs, packet analysis, incident response, and debugging under pressure",
+      "Interested in secure systems, network defense, adversarial analysis, and real-world cyber operations",
     ],
-    animationBlurb:
-      "The background streams cryptographic-style character fields that react to cursor position like a shifting security surface.",
   },
   Physics: {
     label: "Physics",
     eyebrow: "Physics",
-    title: "Using mathematical models to understand motion, fields, light, and physical systems",
+    title: "Studying calculus-based physics while moving toward quantum optics, nanophotonics, imaging, and device research",
     description:
-      "Physics matters to me because it connects equations to real behavior, from mechanics and electromagnetism to future work in optics, imaging, and advanced devices.",
+      "Physics is one of the fields I care most about because it connects mathematical structure to the real behavior of matter, light, motion, and engineered systems.",
     long:
-      "My physics background includes calculus-based mechanics and electricity and magnetism, but what really draws me in is the way physics unifies theory and reality. I am especially interested in light-matter interactions, quantum optics, nanophotonics, and experimental systems where modeling and physical design have to work together. Long term, I want to do research on problems that connect physics, computation, and hardware, especially where careful mathematical reasoning directly shapes how a device or system behaves.",
+      "My physics background includes calculus-based physics in both mechanics and electricity and magnetism, and I am especially interested in continuing toward more advanced areas such as quantum optics, nanophotonics, advanced imaging, and experimental hardware research. What draws me to physics is the combination of mathematical rigor, physical intuition, and the ability to explain real systems from first principles. I am particularly interested in research at the intersection of light-matter interactions, photonic systems, computational modeling, and experimental device design. Long term, I want to work on problems where physics, computation, and hardware development all meet in a meaningful way.",
     chips: [
       "Calculus-Based Mechanics",
       "Calculus-Based E&M",
@@ -95,31 +93,30 @@ const subjects = {
       "Imaging",
       "Device Physics",
     ],
+    cardTone: "from-sky-300/18 via-cyan-300/10 to-transparent",
     pillTone: "border-sky-300/25 bg-sky-300/10 text-sky-100",
     activeTone:
       "border-sky-300/30 bg-sky-300/12 text-white shadow-[0_0_30px_rgba(125,211,252,0.12)]",
     dot: "bg-sky-300",
     stats: [
-      { label: "Coursework", value: "Calc-Based Physics" },
-      { label: "Research Goal", value: "Optics + Photonics" },
-      { label: "Long-Term Use", value: "Theory + Hardware" },
+      { label: "Coursework", value: "Calculus-Based Physics" },
+      { label: "Research Interest", value: "Quantum Optics" },
+      { label: "Long-Term Focus", value: "Photonics + Imaging" },
     ],
     points: [
-      "Using calculus-based physics as a foundation for more advanced physical research",
-      "Most interested in optics, photonics, imaging, and light-matter interaction problems",
-      "Want to bridge mathematical physics with experimental and computational systems",
+      "Studying calculus-based mechanics and electricity and magnetism with a strong interest in deeper theory",
+      "Interested in nanophotonics, quantum optics, advanced imaging, and light-matter interaction research",
+      "Want to connect physics, computation, and experimental device design in future research",
     ],
-    animationBlurb:
-      "The background simulates a gravitational system where stars and planets orbit a black hole while the cursor adds a small local gravitational perturbation.",
   },
   Chemistry: {
     label: "Chemistry",
     eyebrow: "Chemistry",
-    title: "Studying how matter behaves, changes, and supports deeper scientific systems",
+    title: "Building a chemistry foundation through AP Chemistry, organic chemistry, biochemistry, and quantitative scientific reasoning",
     description:
-      "Chemistry gives me the molecular and materials-level understanding that connects naturally to physics, biology, and device-oriented research.",
+      "Chemistry matters to me because it explains how matter behaves and changes, and it connects naturally to physics, materials, biology, and device-oriented research.",
     long:
-      "My chemistry work includes AP Chemistry, organic chemistry, and biochemistry, and I see it as essential for understanding how real systems behave below the macroscopic level. I am especially interested in how chemistry supports physical systems, materials questions, and interdisciplinary scientific work. The subject is valuable to me because it combines conceptual structure, quantitative reasoning, and experimental thinking in a way that directly supports future research in devices, materials, and advanced scientific modeling.",
+      "My chemistry background includes AP Chemistry, organic chemistry, and biochemistry, and I am especially interested in how chemistry supports deeper work in materials, molecular behavior, physical systems, and experimental science. I like the way chemistry combines conceptual understanding with calculation, structure, and real laboratory thinking. It is also one of the subjects that connects well to several of my broader interests, including device development, photonic and physical systems, and interdisciplinary STEM research. Over time, I want to deepen this into stronger work in physical chemistry, materials-related questions, and chemistry that supports advanced hardware and scientific modeling.",
     chips: [
       "AP Chemistry",
       "Organic Chemistry",
@@ -128,31 +125,30 @@ const subjects = {
       "Molecular Structure",
       "Physical Chemistry",
     ],
+    cardTone: "from-emerald-300/18 via-teal-300/10 to-transparent",
     pillTone: "border-emerald-300/25 bg-emerald-300/10 text-emerald-100",
     activeTone:
       "border-emerald-300/30 bg-emerald-300/12 text-white shadow-[0_0_30px_rgba(110,231,183,0.12)]",
     dot: "bg-emerald-300",
     stats: [
-      { label: "Foundation", value: "AP Chem + Beyond" },
-      { label: "Extra Study", value: "Orgo + Biochem" },
-      { label: "Future Use", value: "Materials + Systems" },
+      { label: "Coursework", value: "AP Chem + Beyond" },
+      { label: "Added Study", value: "Orgo + Biochem" },
+      { label: "Interest", value: "Physical Systems" },
     ],
     points: [
-      "Built chemistry depth across general, organic, and biochemical topics",
-      "Interested in molecular behavior, thermodynamics, and chemistry tied to physics and materials",
-      "Want chemistry to support more advanced research in scientific and device-focused systems",
+      "Built chemistry depth through AP Chemistry, organic chemistry, and biochemistry",
+      "Interested in molecular behavior, thermodynamics, structure, and chemistry connected to physics and materials",
+      "Want chemistry to support future research in advanced scientific systems and device-focused work",
     ],
-    animationBlurb:
-      "The background generates a different atom on each load and visualizes its stylized orbital structure with motion and color shifts tied to cursor position.",
   },
   Math: {
     label: "Math",
     eyebrow: "Mathematics",
-    title: "Using rigorous quantitative reasoning as the backbone of everything else I do",
+    title: "Using calculus, statistics, and quantitative reasoning as the backbone of everything else I build",
     description:
-      "Math is the common structure behind my work in AI, physics, cybersecurity, chemistry, and future quantum computing research.",
+      "Math is the subject that strengthens all of my other work, from AI and cybersecurity to physics, chemistry, and quantum computing.",
     long:
-      "Mathematics is the subject I rely on most broadly. I use it for modeling, optimization, analysis, and turning hard technical ideas into something precise enough to build from or prove from. Whether the problem is in machine learning, physics, security, or scientific computation, math is what gives that work clarity and structure. In the long term, it is the part of my background that will stay central to everything else because it supports both theory and real-world technical systems.",
+      "My mathematics background currently includes AP Calculus BC and AP Statistics, and I rely heavily on mathematical reasoning across everything I do. Whether I am working on machine learning, physics, cybersecurity, optimization, or future quantum computing research, math is what gives those subjects structure and precision. I am especially drawn to rigorous problem solving, modeling, abstraction, and using quantitative tools to make technically difficult ideas exact. In the long term, mathematics will remain central to how I approach research, because it is the common language behind both theory and serious technical building.",
     chips: [
       "AP Calculus BC",
       "AP Statistics",
@@ -161,53 +157,53 @@ const subjects = {
       "Analysis",
       "Optimization",
     ],
+    cardTone: "from-fuchsia-300/18 via-purple-300/10 to-transparent",
     pillTone: "border-fuchsia-300/25 bg-fuchsia-300/10 text-fuchsia-100",
     activeTone:
       "border-fuchsia-300/30 bg-fuchsia-300/12 text-white shadow-[0_0_30px_rgba(244,114,182,0.12)]",
     dot: "bg-fuchsia-300",
     stats: [
       { label: "Current Courses", value: "Calc BC + Stats" },
-      { label: "Role", value: "Core Framework" },
-      { label: "Main Use", value: "Models + Precision" },
+      { label: "Role", value: "STEM Backbone" },
+      { label: "Use", value: "Models + Theory" },
     ],
     points: [
-      "Using calculus and statistics as working tools across technical disciplines",
-      "Drawn to abstraction, modeling, optimization, and mathematically clean problem solving",
-      "See math as the language that makes serious research and engineering possible",
+      "Using calculus and statistics as core tools across research, engineering, and technical problem solving",
+      "Interested in abstraction, modeling, optimization, and mathematically rigorous thinking",
+      "See mathematics as the foundation behind AI, physics, security, chemistry, and quantum work",
     ],
-    animationBlurb:
-      "The background uses a cursor-reactive flow field so the scene behaves like a live mathematical system instead of a static graph.",
   },
 } as const
 
 const homeContent = {
   eyebrow: "Overview",
-  title: "Researching and building across AI, cybersecurity, physics, chemistry, mathematics, and advanced technical systems",
+  title: "High school researcher building across AI, quantum computing, cybersecurity, physics, chemistry, mathematics, and hardware systems",
   description:
-    "I’m Pushpak Jain, a high school researcher building through difficult quantitative work, real technical projects, and interdisciplinary STEM interests rather than staying inside one narrow track.",
+    "I’m Pushpak Jain, a high school junior pursuing difficult technical work across multiple fields, with a strong focus on research, on-device AI, hardware-software integration, and mathematically serious problem solving.",
   long:
-    "This site is designed to give a reader a fast but meaningful sense of what I actually work on. My strongest interests are in practical AI systems, cybersecurity, computation-heavy physics, mathematically grounded problem solving, chemistry that supports scientific systems, and research that connects software with real devices. The goal is not just breadth for its own sake, but depth across areas that reinforce one another: math supports physics and AI, physics supports device thinking, chemistry supports materials and scientific reasoning, and security sharpens systems-level thinking.",
+    "My work is intentionally multidisciplinary. I build across artificial intelligence, quantum computing, cybersecurity, physics, chemistry, mathematics, and hardware-oriented engineering because I care about problems that are both technically deep and practically meaningful. I have worked on offline lip-reading AI using Core ML and the Apple Neural Engine, reinforcement learning models under real-world constraints, competitive cybersecurity challenges, quantum computing competitions, and PCB-based hardware systems for robotics. I am especially interested in future research at the intersection of computation, light-matter interactions, device design, quantum systems, and advanced scientific modeling.",
   chips: [
     "AI",
+    "Quantum Computing",
     "Cybersecurity",
     "Physics",
     "Chemistry",
     "Mathematics",
-    "Research",
     "Hardware",
-    "Systems",
+    "Research",
   ],
+  cardTone: "from-cyan-300/12 via-violet-300/8 to-transparent",
   pillTone: "border-white/15 bg-white/8 text-white/86",
   dot: "bg-white",
   stats: [
     { label: "Focus", value: "Research + Systems" },
-    { label: "Style", value: "Depth + Building" },
+    { label: "Strength", value: "Theory + Building" },
     { label: "Identity", value: "Multidisciplinary STEM" },
   ],
   points: [
-    "Working across multiple technical fields that strengthen one another instead of treating them separately",
-    "Most interested in problems that require mathematical rigor, scientific reasoning, and real implementation",
-    "Building toward research that connects computation, physical systems, and advanced technical design",
+    "Building across AI, cybersecurity, quantum computing, hardware, and the physical sciences instead of staying in only one area",
+    "Interested in research that combines mathematical depth, real systems, and serious technical constraints",
+    "Aiming to work on problems at the intersection of computation, physics, devices, and advanced scientific research",
   ],
 } as const
 
@@ -261,31 +257,6 @@ function SubjectButton({
       <span className="flex items-center gap-2.5">
         <span className={`h-2 w-2 rounded-full ${item.dot}`} />
         {item.label}
-      </span>
-    </button>
-  )
-}
-
-function ContactButton({
-  open,
-  onClick,
-}: {
-  open: boolean
-  onClick: () => void
-}) {
-  return (
-    <button
-      onClick={onClick}
-      aria-pressed={open}
-      className={`rounded-full border px-4 py-3 text-[11px] uppercase tracking-[0.28em] transition-all duration-300 ${
-        open
-          ? "border-white/22 bg-white/[0.1] text-white shadow-[0_0_30px_rgba(255,255,255,0.08)]"
-          : "border-white/10 bg-white/[0.03] text-white/64 hover:border-white/16 hover:bg-white/[0.05] hover:text-white/88"
-      }`}
-    >
-      <span className="flex items-center gap-2.5">
-        <span className="h-2 w-2 rounded-full bg-white" />
-        Contact
       </span>
     </button>
   )
@@ -381,9 +352,9 @@ function ModePanel({
   chipMode: ChipMode
 }) {
   return (
-    <section className="mx-auto grid min-h-full max-w-7xl grid-cols-1 gap-6 px-6 pb-10 pt-6 md:px-10 lg:grid-cols-[minmax(0,1fr)_20rem] lg:items-start">
+    <section className="mx-auto grid min-h-full max-w-7xl grid-cols-1 gap-5 px-6 pb-8 pt-6 md:px-10 lg:grid-cols-[minmax(0,1fr)_19rem] lg:items-end">
       <div
-        className="max-w-[42rem] overflow-hidden rounded-[2rem] border border-white/8 bg-[linear-gradient(180deg,rgba(8,18,31,0.6),rgba(7,12,22,0.3))] shadow-[0_20px_80px_rgba(0,0,0,0.24)] backdrop-blur-xl"
+        className="max-w-[36rem] self-end overflow-hidden rounded-[2rem] border border-white/8 bg-[linear-gradient(180deg,rgba(8,18,31,0.56),rgba(7,12,22,0.28))] shadow-[0_20px_80px_rgba(0,0,0,0.24)] backdrop-blur-xl"
         style={{ animation: "panelRise 640ms cubic-bezier(0.22,1,0.36,1) both" }}
       >
         <div className={`h-px w-full ${accentLine}`} />
@@ -412,7 +383,7 @@ function ModePanel({
               Pushpak Jain
             </h1>
 
-            <div className="mt-4 max-w-3xl text-[1.85rem] font-medium leading-tight tracking-[-0.045em] text-white/97">
+            <div className="mt-4 max-w-3xl text-[1.9rem] font-medium leading-tight tracking-[-0.045em] text-white/97">
               {title}
             </div>
 
@@ -434,10 +405,10 @@ function ModePanel({
       </div>
 
       <div
-        className="w-full max-w-[20rem] space-y-3"
+        className="w-full max-w-[19rem] justify-self-end self-end space-y-3"
         style={{ animation: "panelRise 700ms 80ms cubic-bezier(0.22,1,0.36,1) both" }}
       >
-        <div className="overflow-hidden rounded-[1.45rem] border border-white/8 bg-[linear-gradient(180deg,rgba(8,17,29,0.5),rgba(7,12,22,0.24))] shadow-[0_16px_52px_rgba(0,0,0,0.18)] backdrop-blur-xl">
+        <div className="overflow-hidden rounded-[1.45rem] border border-white/8 bg-[linear-gradient(180deg,rgba(8,17,29,0.48),rgba(7,12,22,0.24))] shadow-[0_16px_52px_rgba(0,0,0,0.18)] backdrop-blur-xl">
           <div className={`h-px w-full ${accentLine}`} />
           <div className="p-5">
             <div
@@ -459,130 +430,17 @@ function ModePanel({
           </div>
         </div>
 
-        <DetailCard title="What I’m doing" body={points[0]} dot={dotClass} />
-        <DetailCard title="Why it’s useful" body={points[1]} dot={dotClass} />
-        <DetailCard title="Where it goes next" body={points[2]} dot={dotClass} />
+        <DetailCard title="Core idea" body={points[0]} dot={dotClass} />
+        <DetailCard title="Approach" body={points[1]} dot={dotClass} />
+        <DetailCard title="Why it matters" body={points[2]} dot={dotClass} />
       </div>
     </section>
   )
 }
 
-function ContactModal({
-  open,
-  onClose,
-}: {
-  open: boolean
-  onClose: () => void
-}) {
-  if (!open) return null
-
-  return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center px-6" onClick={onClose}>
-      <div className="absolute inset-0 bg-black/65 backdrop-blur-xl" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(103,232,249,0.12),transparent_24%),radial-gradient(circle_at_80%_22%,rgba(167,139,250,0.12),transparent_28%),radial-gradient(circle_at_50%_80%,rgba(244,114,182,0.1),transparent_26%)] animate-[modalBackdrop_9s_ease-in-out_infinite]" />
-      <div
-        className="relative w-full max-w-2xl overflow-hidden rounded-[2.2rem] border border-white/12 bg-[linear-gradient(180deg,rgba(10,16,28,0.94),rgba(7,12,22,0.92))] shadow-[0_30px_120px_rgba(0,0,0,0.55)] backdrop-blur-2xl"
-        onClick={(e) => e.stopPropagation()}
-        style={{ animation: "modalIn 560ms cubic-bezier(0.22,1,0.36,1) both" }}
-      >
-        <div className="pointer-events-none absolute inset-0">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(103,232,249,0.16),transparent_34%),radial-gradient(circle_at_bottom_right,rgba(167,139,250,0.14),transparent_34%),radial-gradient(circle_at_center,rgba(255,255,255,0.03),transparent_44%)]" />
-          <div className="absolute -left-16 top-10 h-44 w-44 rounded-full bg-cyan-300/10 blur-3xl animate-[floatOrb_8s_ease-in-out_infinite]" />
-          <div className="absolute -right-8 bottom-4 h-56 w-56 rounded-full bg-violet-300/10 blur-3xl animate-[floatOrb_10s_ease-in-out_infinite_reverse]" />
-          <div className="absolute left-1/2 top-1/2 h-40 w-40 -translate-x-1/2 -translate-y-1/2 rounded-full bg-fuchsia-300/8 blur-3xl animate-[pulseCore_6s_ease-in-out_infinite]" />
-          <div className="absolute inset-0 opacity-[0.08] [background-image:linear-gradient(rgba(255,255,255,0.25)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.25)_1px,transparent_1px)] [background-size:28px_28px]" />
-        </div>
-
-        <div className="relative border-b border-white/8 px-6 py-5 md:px-8">
-          <div className="flex items-start justify-between gap-4">
-            <div>
-              <div className="inline-flex items-center gap-2 rounded-full border border-white/14 bg-white/[0.05] px-4 py-2 text-sm text-white/84">
-                <span className="h-2 w-2 rounded-full bg-white" />
-                Contact
-              </div>
-              <h2 className="mt-4 text-4xl font-semibold tracking-[-0.05em] text-white md:text-5xl">
-                Get in touch
-              </h2>
-              <p className="mt-3 max-w-2xl text-sm leading-7 text-white/66 md:text-base">
-                Reach out for research conversations, technical collaboration, internships, or project discussions.
-              </p>
-            </div>
-
-            <button
-              onClick={onClose}
-              className="rounded-full border border-white/12 bg-white/[0.04] px-3 py-2 text-xs uppercase tracking-[0.28em] text-white/74 transition hover:bg-white/[0.08] hover:text-white"
-            >
-              Close
-            </button>
-          </div>
-        </div>
-
-        <div className="relative grid gap-4 p-6 md:grid-cols-2 md:p-8">
-          <a
-            href="mailto:jainpushpak09@gmail.com"
-            className="group rounded-[1.4rem] border border-white/10 bg-white/[0.04] p-5 transition hover:border-cyan-300/24 hover:bg-white/[0.07]"
-          >
-            <div className="text-[11px] uppercase tracking-[0.28em] text-white/42">Email</div>
-            <div className="mt-3 text-xl font-medium text-white/94">jainpushpak09@gmail.com</div>
-            <p className="mt-3 text-sm leading-7 text-white/62">
-              Best for detailed messages about research, projects, opportunities, or introductions.
-            </p>
-          </a>
-
-          <a
-            href="https://www.linkedin.com/in/pushpak-jain-4018ab31a/"
-            target="_blank"
-            rel="noreferrer"
-            className="group rounded-[1.4rem] border border-white/10 bg-white/[0.04] p-5 transition hover:border-sky-300/24 hover:bg-white/[0.07]"
-          >
-            <div className="text-[11px] uppercase tracking-[0.28em] text-white/42">LinkedIn</div>
-            <div className="mt-3 text-xl font-medium text-white/94">pushpak-jain-4018ab31a</div>
-            <p className="mt-3 text-sm leading-7 text-white/62">
-              Best for professional context, background, and direct academic or career networking.
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/pushiscool"
-            target="_blank"
-            rel="noreferrer"
-            className="group rounded-[1.4rem] border border-white/10 bg-white/[0.04] p-5 transition hover:border-violet-300/24 hover:bg-white/[0.07]"
-          >
-            <div className="text-[11px] uppercase tracking-[0.28em] text-white/42">GitHub</div>
-            <div className="mt-3 text-xl font-medium text-white/94">github.com/pushiscool</div>
-            <p className="mt-3 text-sm leading-7 text-white/62">
-              Best for seeing code, projects, experiments, and how I build technical work in practice.
-            </p>
-          </a>
-
-          <a
-            href="tel:2025780257"
-            className="group rounded-[1.4rem] border border-white/10 bg-white/[0.04] p-5 transition hover:border-fuchsia-300/24 hover:bg-white/[0.07]"
-          >
-            <div className="text-[11px] uppercase tracking-[0.28em] text-white/42">Phone</div>
-            <div className="mt-3 text-xl font-medium text-white/94">(202) 578-0257</div>
-            <p className="mt-3 text-sm leading-7 text-white/62">
-              Best for direct contact when a faster response matters more than a longer written message.
-            </p>
-          </a>
-        </div>
-      </div>
-    </div>
-  )
-}
-
 export default function HomePage() {
-  const [selected, setSelected] = useState<SectionKey>("Home")
   const [contactOpen, setContactOpen] = useState(false)
-
-  useEffect(() => {
-    const onKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setContactOpen(false)
-    }
-
-    window.addEventListener("keydown", onKeyDown)
-    return () => window.removeEventListener("keydown", onKeyDown)
-  }, [])
+  const [selected, setSelected] = useState<SectionKey>("Home")
 
   const active = useMemo(() => {
     if (selected === "Home") return homeContent
@@ -612,14 +470,14 @@ export default function HomePage() {
       )}
 
       <div className="relative z-10 flex h-screen flex-col overflow-hidden">
-        <header className="sticky top-0 z-20 shrink-0 border-b border-white/8 bg-slate-950/25 backdrop-blur-xl">
+        <header className="sticky top-0 z-20 shrink-0 border-b border-white/8 bg-slate-950/20 backdrop-blur-xl">
           <div className="mx-auto flex max-w-7xl flex-col gap-3 px-6 py-4 md:px-10 lg:flex-row lg:items-center lg:justify-between">
             <div className="shrink-0">
               <NameButton active={selected === "Home"} onClick={() => setSelected("Home")} />
             </div>
 
             <div
-              className={`w-full max-w-5xl rounded-[1.45rem] border p-2 backdrop-blur-xl shadow-[0_16px_56px_rgba(0,0,0,0.22)] ${
+              className={`w-full max-w-4xl rounded-[1.45rem] border p-2 backdrop-blur-xl shadow-[0_16px_56px_rgba(0,0,0,0.22)] ${
                 aiMode
                   ? "border-cyan-300/12 bg-[linear-gradient(180deg,rgba(7,17,30,0.52),rgba(7,12,23,0.34))]"
                   : cyberMode
@@ -642,7 +500,6 @@ export default function HomePage() {
                     onClick={() => setSelected(name)}
                   />
                 ))}
-                <ContactButton open={contactOpen} onClick={() => setContactOpen(true)} />
               </div>
             </div>
           </div>
@@ -659,8 +516,8 @@ export default function HomePage() {
               stats={active.stats}
               accentLine="bg-[linear-gradient(90deg,transparent,rgba(103,232,249,0.7),rgba(167,139,250,0.55),transparent)]"
               glowBg="bg-[radial-gradient(circle_at_top_left,rgba(103,232,249,0.12),transparent_34%),radial-gradient(circle_at_bottom_right,rgba(167,139,250,0.12),transparent_34%)]"
-              sideTitle="How the animation works"
-              sideText={subjects.AI.animationBlurb}
+              sideTitle="Network view"
+              sideText="This section shows the kinds of AI systems I build, the tools I use, and the research direction I want to push further."
               points={active.points}
               chipMode="ai"
             />
@@ -674,8 +531,8 @@ export default function HomePage() {
               stats={active.stats}
               accentLine="bg-[linear-gradient(90deg,transparent,rgba(196,181,253,0.72),rgba(129,140,248,0.58),transparent)]"
               glowBg="bg-[radial-gradient(circle_at_top_left,rgba(196,181,253,0.12),transparent_34%),radial-gradient(circle_at_bottom_right,rgba(129,140,248,0.12),transparent_34%)]"
-              sideTitle="How the animation works"
-              sideText={subjects.Cybersecurity.animationBlurb}
+              sideTitle="Hash field"
+              sideText="This section summarizes my security background through competitions, technical tools, and the types of systems and defense problems I want to study more deeply."
               points={active.points}
               chipMode="cyber"
             />
@@ -689,8 +546,8 @@ export default function HomePage() {
               stats={active.stats}
               accentLine="bg-[linear-gradient(90deg,transparent,rgba(125,211,252,0.72),rgba(96,165,250,0.6),rgba(168,85,247,0.45),transparent)]"
               glowBg="bg-[radial-gradient(circle_at_top_left,rgba(125,211,252,0.12),transparent_34%),radial-gradient(circle_at_bottom_right,rgba(168,85,247,0.1),transparent_34%)]"
-              sideTitle="How the animation works"
-              sideText={subjects.Physics.animationBlurb}
+              sideTitle="Orbital system"
+              sideText="This section explains the part of physics I care most about, how it connects to math and computation, and the research areas I want to grow into."
               points={active.points}
               chipMode="physics"
             />
@@ -704,8 +561,8 @@ export default function HomePage() {
               stats={active.stats}
               accentLine="bg-[linear-gradient(90deg,transparent,rgba(52,211,153,0.72),rgba(45,212,191,0.62),rgba(103,232,249,0.46),transparent)]"
               glowBg="bg-[radial-gradient(circle_at_top_left,rgba(52,211,153,0.12),transparent_34%),radial-gradient(circle_at_bottom_right,rgba(103,232,249,0.1),transparent_34%)]"
-              sideTitle="How the animation works"
-              sideText={subjects.Chemistry.animationBlurb}
+              sideTitle="Quantum model"
+              sideText="Each page load selects a different atom and renders stylized orbital probability clouds whose color shifts with expected electron velocities and cursor position."
               points={active.points}
               chipMode="chemistry"
             />
@@ -719,14 +576,15 @@ export default function HomePage() {
               stats={active.stats}
               accentLine="bg-[linear-gradient(90deg,transparent,rgba(244,114,182,0.68),rgba(192,132,252,0.62),rgba(125,211,252,0.5),transparent)]"
               glowBg="bg-[radial-gradient(circle_at_top_left,rgba(244,114,182,0.12),transparent_34%),radial-gradient(circle_at_bottom_right,rgba(192,132,252,0.12),transparent_34%)]"
-              sideTitle="How the animation works"
-              sideText={subjects.Math.animationBlurb}
+              sideTitle="Flow field"
+              sideText="This view turns the math tab into a full-screen vector field with turbulent particle motion that shifts continuously with cursor movement."
               points={active.points}
               chipMode="math"
             />
           ) : (
             <section
-              className="mx-auto grid min-h-full max-w-7xl grid-cols-1 gap-6 px-6 pb-10 pt-6 md:px-10 lg:grid-cols-[1.08fr_0.92fr] lg:items-start lg:gap-8"
+              key={`default-${selected}`}
+              className="mx-auto grid min-h-full max-w-7xl grid-cols-1 gap-6 px-6 pb-10 pt-6 md:px-10 lg:grid-cols-[1.04fr_0.96fr] lg:items-center lg:gap-8"
             >
               <div
                 className="rounded-[2.1rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.075),rgba(255,255,255,0.03))] p-6 backdrop-blur-2xl shadow-[0_18px_80px_rgba(0,0,0,0.32)] md:p-8 lg:p-9"
@@ -749,9 +607,13 @@ export default function HomePage() {
                 </div>
 
                 <div className="mt-7 rounded-[1.6rem] border border-white/9 bg-white/[0.03] p-5 backdrop-blur-xl">
-                  <div className="text-[11px] uppercase tracking-[0.32em] text-white/48">How to use this page</div>
+                  <div className="text-[11px] uppercase tracking-[0.32em] text-white/48">
+                    {selected === "Home" ? "Site overview" : "Selected subject"}
+                  </div>
                   <p className="mt-3 text-sm leading-7 text-white/68">
-                    Click the subject tabs to see the main areas I work in, what I am actually doing in each one, why it matters, and the kind of research direction I want to build toward.
+                    {selected === "Home"
+                      ? "Click through the subject tabs to explore the major fields that shape my work, from AI and cybersecurity to physics, chemistry, and mathematics, then return here for the full overview."
+                      : "This section updates based on the subject tab you select above, while my name in the top-left always brings you back to the home screen."}
                   </p>
 
                   <div className="mt-5 flex flex-wrap gap-2">
@@ -778,11 +640,13 @@ export default function HomePage() {
                 style={{ animation: "panelRise 700ms 80ms cubic-bezier(0.22,1,0.36,1) both" }}
               >
                 <div className="relative overflow-hidden rounded-[1.7rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.045),rgba(255,255,255,0.015))] p-6">
-                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-cyan-300/12 via-violet-300/8 to-transparent" />
+                  <div className={`pointer-events-none absolute inset-0 bg-gradient-to-br ${active.cardTone}`} />
                   <div className="relative">
-                    <div className="text-[11px] uppercase tracking-[0.32em] text-white/48">What this site is for</div>
+                    <div className="text-[11px] uppercase tracking-[0.32em] text-white/48">
+                      {selected === "Home" ? "About this site" : "About this area"}
+                    </div>
                     <div className="mt-4 text-3xl font-semibold tracking-[-0.04em] text-white">
-                      A real overview, not just a design shell
+                      {selected === "Home" ? "A multidisciplinary STEM portfolio" : active.eyebrow}
                     </div>
                     <p className="mt-4 max-w-2xl text-sm leading-7 text-white/70">{active.long}</p>
                   </div>
@@ -792,7 +656,7 @@ export default function HomePage() {
                   {active.points.map((point, index) => (
                     <DetailCard
                       key={point}
-                      title={index === 0 ? "What I’m doing" : index === 1 ? "Why it’s useful" : "Where it goes next"}
+                      title={index === 0 ? "Core idea" : index === 1 ? "Approach" : "Why it matters"}
                       body={point}
                       dot={active.dot}
                     />
@@ -800,12 +664,12 @@ export default function HomePage() {
                 </div>
 
                 <div className="mt-5 rounded-[1.55rem] border border-white/9 bg-white/[0.03] p-5 backdrop-blur-xl">
-                  <div className="text-[11px] uppercase tracking-[0.28em] text-white/44">Reader takeaway</div>
+                  <div className="text-[11px] uppercase tracking-[0.28em] text-white/44">Personal lens</div>
                   <div className="mt-3 text-xl font-medium tracking-[-0.03em] text-white/94">
-                    The main point is that my work is strongest where theory, quantitative reasoning, and implementation meet.
+                    I’m most drawn to work that combines mathematical depth, research-level thinking, and real technical building.
                   </div>
                   <p className="mt-3 text-sm leading-7 text-white/66">
-                    I want the reader to leave with a clear sense of both range and seriousness: not just what subjects I like, but what I am building, what I want to research, and how those areas connect.
+                    Across everything I study, the common thread is the same: rigorous theory, serious quantitative reasoning, and building things that push beyond surface-level understanding.
                   </p>
                 </div>
               </div>
@@ -813,8 +677,6 @@ export default function HomePage() {
           )}
         </div>
       </div>
-
-      <ContactModal open={contactOpen} onClose={() => setContactOpen(false)} />
 
       <style jsx global>{`
         @keyframes panelRise {
@@ -825,59 +687,6 @@ export default function HomePage() {
           100% {
             opacity: 1;
             transform: translateY(0);
-          }
-        }
-
-        @keyframes modalIn {
-          0% {
-            opacity: 0;
-            transform: translateY(28px) scale(0.96);
-          }
-          100% {
-            opacity: 1;
-            transform: translateY(0) scale(1);
-          }
-        }
-
-        @keyframes floatOrb {
-          0% {
-            transform: translate3d(0, 0, 0) scale(1);
-          }
-          50% {
-            transform: translate3d(18px, -14px, 0) scale(1.08);
-          }
-          100% {
-            transform: translate3d(0, 0, 0) scale(1);
-          }
-        }
-
-        @keyframes pulseCore {
-          0% {
-            transform: translate(-50%, -50%) scale(0.92);
-            opacity: 0.5;
-          }
-          50% {
-            transform: translate(-50%, -50%) scale(1.08);
-            opacity: 0.8;
-          }
-          100% {
-            transform: translate(-50%, -50%) scale(0.92);
-            opacity: 0.5;
-          }
-        }
-
-        @keyframes modalBackdrop {
-          0% {
-            opacity: 0.8;
-            transform: scale(1);
-          }
-          50% {
-            opacity: 1;
-            transform: scale(1.03);
-          }
-          100% {
-            opacity: 0.8;
-            transform: scale(1);
           }
         }
       `}</style>
