@@ -381,7 +381,7 @@ function ModePanel({
   chipMode: ChipMode
 }) {
   return (
-    <section className="mx-auto grid h-[calc(100vh-88px)] max-w-7xl grid-cols-1 gap-5 px-6 pb-8 pt-6 md:px-10 lg:grid-cols-[minmax(0,1fr)_19rem] lg:items-end">
+    <section className="mx-auto grid min-h-[calc(100vh-88px)] max-w-7xl grid-cols-1 gap-5 px-6 pb-8 pt-6 md:px-10 lg:grid-cols-[minmax(0,1fr)_19rem] lg:items-end">
       <div
         className="max-w-[36rem] self-end overflow-hidden rounded-[2rem] border border-white/8 bg-[linear-gradient(180deg,rgba(8,18,31,0.56),rgba(7,12,22,0.28))] shadow-[0_20px_80px_rgba(0,0,0,0.24)] backdrop-blur-xl"
         style={{ animation: "panelRise 640ms cubic-bezier(0.22,1,0.36,1) both" }}
@@ -626,7 +626,7 @@ export default function HomePage() {
   const mathMode = selected === "Math"
 
   return (
-    <main className="relative h-screen overflow-hidden bg-slate-950 text-white">
+    <main className="relative min-h-screen overflow-x-hidden bg-slate-950 text-white">
       {aiMode ? (
         <NeuralNetworkBackground />
       ) : cyberMode ? (
@@ -641,8 +641,8 @@ export default function HomePage() {
         <ImmersiveSTEMBackground />
       )}
 
-      <div className="relative z-10 h-screen overflow-hidden">
-        <header className="mx-auto flex max-w-7xl flex-col gap-4 px-6 pt-6 md:px-10 lg:flex-row lg:items-start lg:justify-between">
+      <div className="relative z-10 min-h-screen">
+        <header className="sticky top-0 z-40 mx-auto flex max-w-7xl flex-col gap-4 px-6 pt-6 pb-3 md:px-10 lg:flex-row lg:items-start lg:justify-between backdrop-blur-md">
           <NameButton active={selected === "Home"} onClick={() => setSelected("Home")} />
 
           <div
@@ -750,7 +750,7 @@ export default function HomePage() {
             chipMode="math"
           />
         ) : (
-          <section className="mx-auto grid h-[calc(100vh-88px)] max-w-7xl grid-cols-1 gap-6 px-6 pb-10 pt-6 md:px-10 lg:grid-cols-[1.04fr_0.96fr] lg:items-center lg:gap-8">
+          <section className="mx-auto grid min-h-[calc(100vh-88px)] max-w-7xl grid-cols-1 gap-6 px-6 pb-10 pt-6 md:px-10 lg:grid-cols-[1.04fr_0.96fr] lg:items-center lg:gap-8">
             <div
               className="rounded-[2.1rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.075),rgba(255,255,255,0.03))] p-6 backdrop-blur-2xl shadow-[0_18px_80px_rgba(0,0,0,0.32)] md:p-8 lg:p-9"
               style={{ animation: "panelRise 640ms cubic-bezier(0.22,1,0.36,1) both" }}
